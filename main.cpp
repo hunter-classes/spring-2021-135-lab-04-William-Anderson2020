@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
     string test = draw_box(4,4);
-    cout << "" << test << "\n";
-    cout << "TEST";
+    cout << test << "\n";
+    cout << "TEST\n";
     return 0;
 }
