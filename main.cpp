@@ -7,6 +7,6 @@ using namespace std;
 
 int main(){
     cout << draw_box(4,4);
-    cout << draw_checkerboard(7,7);
+    cout << draw_checkerboard(11,6);
     return 0;
 }
