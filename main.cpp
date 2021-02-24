@@ -4,6 +4,7 @@ using namespace std;
 #include "box.h"
 
 int main(){
-    cout << draw_box(4,4) << "\n";
+    string test = draw_box(4,4);
+    cout << test << "\n";
     return 0;
 }
