@@ -8,7 +8,7 @@ string draw_box(int h, int w){
         for (int j = 0; i < j; i++){
             line = line + "*";
         };
-        shape = shape + "\n";
+        shape = shape + line + "\n";
     };
     return shape;
 };
