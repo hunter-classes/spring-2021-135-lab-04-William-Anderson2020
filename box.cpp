@@ -6,7 +6,7 @@ string draw_box(int h, int w){
     for (int i = 0; i < h; i++){
         string line = "";
         for (int j = 0; i < j; i++){
-            line = line + "*";
+            line += "*";
         };
         shape = shape + line + "\n";
     };
