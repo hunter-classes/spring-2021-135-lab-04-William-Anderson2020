@@ -7,16 +7,19 @@ string draw_checkerboard(int width, int height){
     string fill_char = "*";
     for (int i = 0; i < height; i++){
         string line = "";
-        if (i % 2 == 0){
-                line += "*";
-            }else{
-                line += " ";
-            };
         for (int j = 0; j < width; j++){
-            if (line.substr(line.length() - 1) == "*"){
-                line += " ";
+            if(line.length() == 0){
+                if (i % 2 == 0){
+                line += "*";
+                }else{
+                        line += " ";
+                };
             }else{
-               line += "*"; 
+                if (line.substr(line.length() - 1) == "*"){
+                    line += " ";
+                }else{
+                line += "*"; 
+                };
             };
         };
         line += "\n";
