@@ -2,14 +2,15 @@
 #include <string>
 using namespace std;
 
-string draw_box(int h, int w){
+string draw_box(int width, int height){
     string shape;
-    for (int i = 0; i < h; i++){
+    for (int i = 0; i < height; i++){
         string line = "";
-        for (int j = 0; i < j; i++){
+        for (int j = 0; i < width; i++){
             line += "*";
         };
-        shape = shape + line + "\n";
+        line += "\n";
+        shape += line;
     };
     cout << shape;
     return shape;
