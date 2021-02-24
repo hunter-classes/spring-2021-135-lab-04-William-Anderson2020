@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 string draw_box(int h, int w){
