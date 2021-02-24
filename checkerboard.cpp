@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-string draw_box(int width, int height){
+string draw_checkerboard(int width, int height){
     string shape;
     string fill_char = "*";
     for (int i = 0; i < height; i++){
