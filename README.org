@@ -1,10 +1,10 @@
 * Spring 2021 - Lab 04
 
-* Last name:
+* Last name: Anderson
 
-* First name:
+* First name: William
 
-* GitHub username:
+* GitHub username: William-Anderson2020
 
 * Notes:
 
