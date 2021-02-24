@@ -12,6 +12,5 @@ string draw_box(int width, int height){
         line += "\n";
         shape += line;
     };
-    cout << shape;
     return shape;
 };

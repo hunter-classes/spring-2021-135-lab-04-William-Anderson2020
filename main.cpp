@@ -5,8 +5,7 @@ using namespace std;
 #include "box.h"
 
 int main(){
-    string test = draw_box(4,4);
-    cout << test << "\n";
+    cout << draw_box(4,4) << "\n";
     cout << "TEST\n";
     return 0;
 }
