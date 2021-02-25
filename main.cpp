@@ -16,5 +16,7 @@ int main(){
     cout << draw_checkerboard(11,6);
     cout << break_line();
     cout << draw_cross(8);
+    cout << break_line();
+    cout << draw_cross(7);
     return 0;
 }
