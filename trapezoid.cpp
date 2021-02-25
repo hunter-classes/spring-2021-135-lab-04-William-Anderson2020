@@ -12,7 +12,7 @@ string draw_trapezoid(int width, int height){
         for(int j = 0; j<i; j++){
             line += " ";
         };
-        for(int j = 0; j < width - (2*i+1); j++){
+        for(int j = 0; j <= width - (2*i+1); j++){
             line += "*";
         };
         line += "\n";
