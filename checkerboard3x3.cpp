@@ -7,7 +7,7 @@ string draw_checkerboard3x3(int width, int height){
     string shape;
     string height_first_char = "*";
     for(int i = 0; i < width; i++){
-        if((i+1)%3 == 0){
+        if(i % 3 == 0 && i > 0){
             cout << "FLIP HEIGHT";
             if(height_first_char == "*"){
                 height_first_char = " ";
@@ -19,7 +19,7 @@ string draw_checkerboard3x3(int width, int height){
         line += height_first_char;
         string width_char = height_first_char;
         for(int j = 0; j < width; j++){
-            if((j+1)%3 == 0){
+            if(j % 3 == 0 && j > 0){
                 cout << "FLIP WIDTH";
                 if(width_char == "*"){
                     width_char = " ";
