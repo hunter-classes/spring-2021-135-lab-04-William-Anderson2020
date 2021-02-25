@@ -13,7 +13,7 @@ string draw_cross(int size){
         if (i > round(size/2)){
             line_num = size - i;
         };
-        if (line_num != size / 2 || size%2 != 0 && !(mid_line_marker == true && line_num == size/2)){
+        if (line_num != size / 2 || size%2 != 0 && !(mid_line_marker == true && line_num == floor(size/2))){
             counter = 0;
             while(counter < line_num){
                 line += " ";
