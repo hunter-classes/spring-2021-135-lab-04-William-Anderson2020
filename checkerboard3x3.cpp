@@ -7,7 +7,7 @@ string draw_checkerboard3x3(int width, int height){
     string shape;
     string height_first_char = "*";
     for(int i = 0; i < height; i++){
-        if(i % 3 == 0 && i > 0){
+        if(i % 3 == 0 && i != 0){
             if(height_first_char == "*"){
                 height_first_char = "a";
             }else{
@@ -17,7 +17,7 @@ string draw_checkerboard3x3(int width, int height){
         string line;
         string width_char = height_first_char;
         for(int j = 0; j < width; j++){
-            if(j % 3 == 0 && j > 0){
+            if(j % 3 == 0 && j != 0){
                 if(width_char == "*"){
                     width_char = "a";
                 }else{
