@@ -7,6 +7,9 @@ string draw_upper_triangle(int size){
     for(int i = 0; i < size; i++){
         string line;
         for(int j = 0; j < i+1; j++){
+            line += " ";
+        };
+        for(int j = i+1; j < size; j++){
             line += "*";
         };
         line += "\n";
