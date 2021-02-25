@@ -3,8 +3,8 @@
 using namespace std;
 
 string draw_trapezoid(int width, int height){
-    if(height * 2 > width){
-        return "Impossible shape!";
+    if(height * 2 > width+1){
+        return "Impossible shape!\n";
     };
     string shape;
     for(int i = 0; i < height; i++){
