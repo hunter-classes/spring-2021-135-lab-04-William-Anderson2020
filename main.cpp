@@ -8,6 +8,7 @@ using namespace std;
 #include "lower_triangle.h"
 #include "upper_triangle.h"
 #include "trapezoid.h"
+#include "checkerboard3x3.h"
 
 string break_line(){
     return "\n--------------------\n\n";
@@ -41,5 +42,10 @@ int main(){
     cout << draw_trapezoid(5,3);
     cout << break_line();
     cout << draw_trapezoid(12,7);
+    cout << break_line();
+    cout << draw_checkerboard3x3(9,9);
+    cout << break_line();
+    cout << draw_checkerboard3x3(16,11);
+    cout << break_line();
     return 0;
 }
