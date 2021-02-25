@@ -36,7 +36,7 @@ string draw_cross(int size){
             cout << line << " " << line_num << endl;
             line += "\n";
             shape += line;
-            if(size%2 != 0 && i == size - size/2){
+            if(size%2 != 0 && i == size - (size/2 + 1)){
                 i++;
             };
         };
