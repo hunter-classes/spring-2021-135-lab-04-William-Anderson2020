@@ -29,7 +29,6 @@ string draw_cross(int size){
                 line += "*";    
             }else{
                 mid_line_marker = true;
-                cout << "FIRE";
             };
             counter = 0;
             while(counter < line_num){
