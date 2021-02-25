@@ -7,6 +7,7 @@ using namespace std;
 #include "cross.h"
 #include "lower_triangle.h"
 #include "upper_triangle.h"
+#include "trapezoid.h"
 
 string break_line(){
     return "\n--------------------\n\n";
@@ -35,5 +36,10 @@ int main(){
     cout << break_line();
     cout << draw_upper_triangle(10);
     cout << break_line();
+    cout << draw_trapezoid(12,5);
+    cout << break_line();
+    cout << draw_trapezoid(5,3);
+    cout << break_line();
+    cout << draw_trapezoid(12,7);
     return 0;
 }

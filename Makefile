@@ -19,5 +19,8 @@ lower_triangle.o: lower_triangle.cpp lower_triangle.h
 upper_triangle.o: upper_triangle.cpp upper_triangle.h
 	g++ -c upper_triangle.cpp
 
+trapezoid.o: trapezoid.cpp trapezoid.h
+	g++ -c trapezoid.cpp
+
 clean:
 	rm -f main.o box.o checkerboard.o cross.o lower_triangle.o upper_triangle.o
