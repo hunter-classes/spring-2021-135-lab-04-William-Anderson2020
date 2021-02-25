@@ -23,7 +23,7 @@ string draw_cross(int size){
                 line += " ";
                 counter++;
             };
-            if((line_num == size/2 && size%2 != 0) || size%2 == 0){
+            if(!(size%2 != 0 && line_num == size/2)){
                 line += "*";    
             };
             counter = 0;
