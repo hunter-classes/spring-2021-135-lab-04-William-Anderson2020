@@ -7,7 +7,7 @@ using namespace std;
 #include "cross.h"
 
 string break_line(){
-    return "\n--------------------\n";
+    return "\n--------------------\n\n";
 }
 
 int main(){
