@@ -19,6 +19,6 @@ int main(){
     cout << break_line();
     cout << draw_cross(7);
     cout << break_line();
-    cout << draw_cross(0);
+    cout << draw_cross(1);
     return 0;
 }
