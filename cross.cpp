@@ -11,7 +11,7 @@ string draw_cross(int size){
         if (i >= size/2 + 1){
             line_num = size - i;
         };
-        if (line_num != size / 2){
+        if (line_num != size / 2 || size%2 != 0){
             counter = 0;
             while(counter < line_num){
                 line += " ";
@@ -23,7 +23,9 @@ string draw_cross(int size){
                 line += " ";
                 counter++;
             };
-            line += "*";
+            if((line_num == size/2 && size%2 != 0) || size%2 == 0){
+                line += "*";    
+            };
             counter = 0;
             while(counter < line_num){
                 line += " ";
