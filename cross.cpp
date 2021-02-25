@@ -8,7 +8,7 @@ string draw_cross(int size){
         string line = "";
         int counter;
         int line_num = i;
-        if (i > size/2){
+        if (i >= (size/2) - 1){
             line_num = size - i;
         };
         counter = 0;
