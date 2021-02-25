@@ -3,4 +3,4 @@
 #include <string>
 using namespace std;
 
-string draw_lower_trianlge(int);
+string draw_lower_triangle(int);

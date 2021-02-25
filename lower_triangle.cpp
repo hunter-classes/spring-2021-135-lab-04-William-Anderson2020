@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-string lower_trianlge(int size){
+string draw_lower_trianlge(int size){
     string shape;
     for(int i = 0; i < size; i++){
         string line;

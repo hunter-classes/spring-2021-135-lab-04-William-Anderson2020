@@ -5,6 +5,7 @@ using namespace std;
 #include "box.h"
 #include "checkerboard.h"
 #include "cross.h"
+#include "lower_triangle.h"
 
 string break_line(){
     return "\n--------------------\n\n";
@@ -20,5 +21,12 @@ int main(){
     cout << draw_cross(7);
     cout << break_line();
     cout << draw_cross(1);
+    cout << break_line();
+    cout << draw_lower_triangle(6);
+    cout << break_line();
+    cout << draw_lower_triangle(1);
+    cout << break_line();
+    cout << draw_lower_triangle(10);
+    cout << break_line();
     return 0;
 }
