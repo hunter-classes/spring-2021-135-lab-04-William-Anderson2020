@@ -15,7 +15,6 @@ string draw_checkerboard3x3(int width, int height){
             };
         };
         string line;
-        line += height_first_char;
         string width_char = height_first_char;
         for(int j = 0; j < width; j++){
             if(j % 3 == 0 && j > 0){
