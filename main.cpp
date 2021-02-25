@@ -6,6 +6,7 @@ using namespace std;
 #include "checkerboard.h"
 #include "cross.h"
 #include "lower_triangle.h"
+#include "upper_triangle.h"
 
 string break_line(){
     return "\n--------------------\n\n";
@@ -27,6 +28,12 @@ int main(){
     cout << draw_lower_triangle(1);
     cout << break_line();
     cout << draw_lower_triangle(10);
+    cout << break_line();
+    cout << draw_upper_triangle(6);
+    cout << break_line();
+    cout << draw_upper_triangle(1);
+    cout << break_line();
+    cout << draw_upper_triangle(10);
     cout << break_line();
     return 0;
 }
