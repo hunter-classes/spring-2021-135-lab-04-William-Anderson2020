@@ -1,5 +1,5 @@
-main: main.o box.o checkerboard.o cross.o
-	g++ -o main main.o box.o checkerboard.o cross.o
+main: main.o box.o checkerboard.o cross.o lower_triangle.o
+	g++ -o main main.o box.o checkerboard.o cross.o lower_triangle.o
 
 main.o: main.cpp box.h
 	g++ -c main.cpp
@@ -13,5 +13,8 @@ checkerboard.o: checkerboard.cpp checkerboard.h
 cross.o: cross.cpp cross.h
 	g++ -c cross.cpp
 
+lower_triangle.o: lower_triangle.cpp lower_triangle.h
+	g++ -c lower_triangle.cpp
+
 clean:
-	rm -f main.o box.o checkerboard.o cross.o
+	rm -f main.o box.o checkerboard.o cross.o lower_triangle.o
