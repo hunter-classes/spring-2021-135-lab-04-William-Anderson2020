@@ -23,9 +23,7 @@ string draw_cross(int size){
                 line += " ";
                 counter++;
             };
-            if(size%2 == 0){
-                line += "*";    
-            };
+            line += "*";
             counter = 0;
             while(counter < line_num){
                 line += " ";
