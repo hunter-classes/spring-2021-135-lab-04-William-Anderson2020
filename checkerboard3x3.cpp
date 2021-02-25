@@ -23,8 +23,8 @@ string draw_checkerboard3x3(int width, int height){
                 }else{
                     width_char = "*";
                 };
-                line += width_char;
             };
+            line += width_char;
         };
         line += "\n";
         shape += line;
