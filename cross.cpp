@@ -12,19 +12,19 @@ string draw_cross(int size){
             line_num = size - i;
         };
         counter = 0;
-        while(counter <= line_num){
+        while(counter < line_num){
             line += " ";
             counter++;
         };
         line += "*";
         counter = 0;
-        while(counter <= size - 2*(line_num+1)){
+        while(counter < size - 2*(line_num+1)){
             line += " ";
             counter++;
         };
         line += "*";
         counter = 0;
-        while(counter <= line_num){
+        while(counter < line_num){
             line += " ";
             counter++;
         };
