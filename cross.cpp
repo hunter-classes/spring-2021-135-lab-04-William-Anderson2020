@@ -38,12 +38,11 @@ string draw_cross(int size){
             };
             cout << line << " " << line_num << endl;
             line += "\n";
-            if(mid_line_marker == true && line_num == size - size/2){
+            if(mid_line_marker == true && line_num == size - (size/2 + 1)){
                 cout << "FIRE\n";
             };
             shape += line;    
         };
-        cout << size - size/2;
     };
     return shape;
 };
