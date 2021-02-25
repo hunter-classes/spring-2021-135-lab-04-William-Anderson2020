@@ -9,11 +9,11 @@ string draw_upper_triangle(int size){
         for(int j = 0; j < i+1; j++){
             line += " ";
         };
-        for(int j = i+1; j < size; j++){
+        for(int j = i; j < size; j++){
             line += "*";
         };
         line += "\n";
-        shape = line + shape;
+        shape = shape+ line;
     };
     return shape;
 };
