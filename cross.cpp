@@ -28,6 +28,7 @@ string draw_cross(int size){
             line += " ";
             counter++;
         };
+        cout << line << " " << line_num << endl;
         line += "\n";
         shape += line;
     };
