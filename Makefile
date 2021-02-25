@@ -23,4 +23,4 @@ trapezoid.o: trapezoid.cpp trapezoid.h
 	g++ -c trapezoid.cpp
 
 clean:
-	rm -f main.o box.o checkerboard.o cross.o lower_triangle.o upper_triangle.o
+	rm -f main.o box.o checkerboard.o cross.o lower_triangle.o upper_triangle.o trapezoid.o
