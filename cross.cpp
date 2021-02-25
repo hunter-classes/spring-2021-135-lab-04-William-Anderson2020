@@ -9,11 +9,11 @@ string draw_cross(int size){
         string line = "";
         int counter;
         int line_num = i;
-        bool mid_line_marker = false;
+        bool odd_size = size%2 != 0;
         if (i > round(size/2)){
             line_num = size - i;
         };
-        if (line_num != size / 2 || size%2 != 0){
+        if (line_num != size / 2 || odd_size){
             counter = 0;
             while(counter < line_num){
                 line += " ";
@@ -25,7 +25,7 @@ string draw_cross(int size){
                 line += " ";
                 counter++;
             };
-            if(!(size%2 != 0 && line_num == size/2)){
+            if(!(odd_size && line_num == size/2)){
                 line += "*";    
             };
             counter = 0;
@@ -35,7 +35,7 @@ string draw_cross(int size){
             };
             line += "\n";
             shape += line;
-            if(size%2 != 0 && i == size - (size/2 + 1)){
+            if(odd_size && i == size - (size/2 + 1)){
                 i++;
             };
         };
