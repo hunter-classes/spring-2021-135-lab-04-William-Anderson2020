@@ -13,7 +13,7 @@ string draw_cross(int size){
         if (i > round(size/2)){
             line_num = size - i;
         };
-        if ((line_num != size / 2 || size%2 != 0) && !(mid_line_marker == true && line_num == size - ceil(size/2))){
+        if (line_num != size / 2 || size%2 != 0){
             counter = 0;
             while(counter < line_num){
                 line += " ";
@@ -38,7 +38,9 @@ string draw_cross(int size){
             };
             cout << line << " " << line_num << endl;
             line += "\n";
-            shape += line;    
+            if(!(mid_line_marker == true && line_num == size - size/2)){
+                shape += line;    
+            };
         };
     };
     return shape;
