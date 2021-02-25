@@ -43,7 +43,7 @@ string draw_cross(int size){
             };
             shape += line;    
         };
-        cout << size - size/2
+        cout << size - size/2;
     };
     return shape;
 };
