@@ -3,7 +3,7 @@
 #include <math.h>
 using namespace std;
 
-string checkerboard3x3(int width, int height){
+string draw_checkerboard3x3(int width, int height){
     string shape;
     string height_first_char = "*";
     for(int i = 0; i < width; i++){
