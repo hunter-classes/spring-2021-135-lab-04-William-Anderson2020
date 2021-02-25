@@ -4,7 +4,7 @@ using namespace std;
 
 string draw_cross(int size){
     string shape;
-    for (int i = 0; i < size; i++){
+    for (int i = 0; i <= size; i++){
         string line = "";
         int counter;
         int line_num = i;
