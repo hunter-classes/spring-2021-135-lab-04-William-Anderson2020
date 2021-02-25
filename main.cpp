@@ -36,7 +36,7 @@ int main(){
     cout << break_line();
     cout << draw_upper_triangle(10);
     cout << break_line();
-    cout << draw_trapezoid(12,5);
+    cout << draw_trapezoid(12,6);
     cout << break_line();
     cout << draw_trapezoid(5,3);
     cout << break_line();
