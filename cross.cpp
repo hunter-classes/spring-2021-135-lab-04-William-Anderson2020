@@ -11,26 +11,30 @@ string draw_cross(int size){
         if (i >= size/2 + 1){
             line_num = size - i;
         };
-        counter = 0;
-        while(counter < line_num){
-            line += " ";
-            counter++;
+        if (line_num != size / 2){
+            counter = 0;
+            while(counter < line_num){
+                line += " ";
+                counter++;
+            };
+            line += "*";
+            counter = 0;
+            while(counter < size - 2*(line_num+1)){
+                line += " ";
+                counter++;
+            };
+            if(size%2 == 0){
+                line += "*";    
+            };
+            counter = 0;
+            while(counter < line_num){
+                line += " ";
+                counter++;
+            };
+            cout << line << " " << line_num << endl;
+            line += "\n";
+            shape += line;    
         };
-        line += "*";
-        counter = 0;
-        while(counter < size - 2*(line_num+1)){
-            line += " ";
-            counter++;
-        };
-        line += "*";
-        counter = 0;
-        while(counter < line_num){
-            line += " ";
-            counter++;
-        };
-        cout << line << " " << line_num << endl;
-        line += "\n";
-        shape += line;
     };
     return shape;
 };
